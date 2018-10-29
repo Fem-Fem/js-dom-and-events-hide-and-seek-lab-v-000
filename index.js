@@ -22,9 +22,9 @@ function deepestChild(n) {
   let node = document.getElementById('grand-node')
   let node1 = node.children[0]
 
-  while (child) {
-    node1 = child
-    child = node1.children[0]
+  while (node1) {
+    node = node1
+    node1 = node.children[0]
   }
 
   return node
